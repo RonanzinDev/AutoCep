@@ -22,8 +22,6 @@ namespace WebScraping
                 IWebElement result = driver.FindElement(By.TagName("body"));
                 Screenshot screenshot = (result as ITakesScreenshot).GetScreenshot();
                 screenshot.SaveAsFile("screenshot.png", ScreenshotImageFormat.Png);
-
-                //29182-578  
             }
         }
     }
